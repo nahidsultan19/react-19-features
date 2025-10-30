@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Posts from "./components/action/Posts";
 import Theme from "./components/use-hook-context/Theme";
 import FetchData from "./components/use-hook-data-fetching/FetchData";
 import PromiseData from "./components/use-hook-promise/PromiseData";
@@ -21,6 +22,9 @@ function App() {
   }
   if (example === "example-3") {
     content = <Theme />;
+  }
+  if (example === "action") {
+    content = <Posts />;
   }
   return (
     <div className="p-12">
